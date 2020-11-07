@@ -3,8 +3,9 @@ def has_negatives(a):
     YOUR CODE HERE
     """
     # Your code here
+    pass
 
-    return result
+    # return result
 
 
 if __name__ == "__main__":
