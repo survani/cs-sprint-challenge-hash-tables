@@ -4,6 +4,20 @@ def intersection(arrays):
     """
     # Your code here
 
+    arrays_table = {}
+    result = []
+
+    for arr in arrays:
+        for i in arr:
+            if i in arrays_table:
+                arrays_table[i] += 1
+            else:
+                arrays_table[i] = 1
+
+    for key, value in arrays_table.items():
+        if value == len(arrays):
+            result.append(key)
+
     return result
 
 
